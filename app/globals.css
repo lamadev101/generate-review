@@ -1,21 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.heading{
+  font-size: 4rem;
+}
+.basicSection{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.nav-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.pricingSection{
+  /* background-color: gainsboro; */
+  align-items: center;
+  justify-content: flex-start;
+}
+.cards-container{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+.card ul li{
+list-style-type:none;
+/* list-style-image: url('../../../public/check-solid.svg'); */
+}
+
+.inputContainer{
+  background-color: rgba(220, 220, 220, 0.486);
+  padding: .6rem;
+  border-radius: .9rem;
+}
+.inputContainer input{
+  width: 25rem;
+  font-size: 1.3rem;
+  border: none;
+  background-color: transparent;
+  color: gray;
+}
+.inputContainer input:focus{
+  border: none;
+  outline: none;
+
+}
+
+.none{
+  display: none;
+}
+.upperBody{
+  display: flex;
+  justify-content: space-between;
+}
+.midBody{
+  display: flex;
+}
+.rounded{
+  padding: .2rem;
+  border-radius:40%!important;
+  color: white;
+  font-size: .8rem;
 }

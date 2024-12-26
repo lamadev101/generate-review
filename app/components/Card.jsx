@@ -1,4 +1,4 @@
-const Card = (props: any) => {
+const Card = (props) => {
   return (
     <div className="card d-flex" style={{ width: "19rem", marginLeft: "2rem" }}>
       <div className="card-body">
